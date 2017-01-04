@@ -1,0 +1,29 @@
+"半角文字の設定
+set guifont=Monospace\ 13
+
+"全角文字の設定
+set guifontwide=Monospace\ 13
+
+" 縦幅　デフォルトは24
+set lines=50
+" 横幅　デフォルトは80
+set columns=120
+
+"syntax enable
+
+" カラースキーム
+"set background=dark
+"colorscheme solarized
+colorscheme desert
+"colorscheme atom-dark
+
+" タブエディタ
+set showtabline=2
+
+" 透過
+"autocmd GUIEnter * set transparency=240
+
+" 折り返さない スクロールバーを表示
+set nowrap
+set guioptions+=b
+
