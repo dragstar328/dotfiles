@@ -1,8 +1,8 @@
 # ディレクトリを日本語に
 LANG=C xdg-user-dirs-gtk-update
 
-# Guest addition
-sudo apt install virtualbox-guest-dkms
+# VM関連ライブラリ
+virtualbox-guest-dkms
 
 # 共有フォルダの権限追加
 sudo gpasswd -a {user} vboxsf
@@ -12,12 +12,7 @@ ln -s /media/{path}
 
 # pkgs
 vim
-gedit-plugins
 git
-cntlm
-libjpeg62
-libgstreamer0.10-0
-libgstreamer-plugins-base0.10-0
 manpages-ja
 
 # R
@@ -30,7 +25,6 @@ sudo apt install r-base
 
 # pyenv
 sudo apt install libssl-dev libsqlite3-dev
-git clone git://github.com/yyuu/pyenv.git ~/.pyenv
 git clone https://github.com/yyuu/pyenv.git ~/.pyenv
 
 # write to .bashrc
@@ -45,3 +39,6 @@ pyenv install --list
 pyenv install 3.5.1 
 pyenv global 3.5.1
 pyenv rehash
+
+# pipenv
+pip install pipenv
